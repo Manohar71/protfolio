@@ -2,61 +2,107 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
-<body style="background-color: black;">
-    
-    <div class="container">
-                <div class="navbar">
-                    <script style="width: 150px;" src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_0fvcgy9k.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px; margin: 0px; padding: 0;"  loop  autoplay></lottie-player>
-                    <nav>
-                        <ul>
-                            <li><a href="#section1">HOME</a></li>
-                            <li><a href="#section2">ABOUT</a></li>
-                            <li><a href="#section3">PORTFOLIO</a></li>
-                            <li><a href="#section4">CONTACT</a></li>
-                        </ul>
-                    </nav>
-                </div>
-    </div>
-   
+<body bgcolor="black">
 
-    
-
-    <div class="content">
-        <section id="section1">
-            <div class="outer">
-                <img src="image_1.png" alt="profile" width="700" height="700">
+    <!-- Navigation bar  -->
+    <nav class="navbar">
+        <div class="max-width">
+            <!-- <div class="logo"><a href="#">Protfo<span>lio.</span></a></div> -->
+            <div class="lottiefile">
+            <script  style="width: 150px;" src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player  src="https://assets2.lottiefiles.com/packages/lf20_0fvcgy9k.json"  background="transparent"  speed="1"  style="width: 80px; height: 80px; margin: 0px; padding: 0;"  loop  autoplay></lottie-player>
             </div>
-            <div class="maintxt">
-                <h1>Hi , i'm <span style="color: rgb(0, 136, 255);">Manohar</span> Makkena</h1>
-                <hr color="white" style="height: 0.2px;">
-             <div class="image" style="float: left;">
-                 <img src="flutter.png" alt="flutter" height="40" width="50">
-             </div>
-             <div class="text">
-                 <h2>Flutter Devloper</h2>
-             </div>
-         </div>
-            <!-- <h3 style="color: red;">section1</h3> -->
-        </section>
-        <section id="section2">
-            <h3 style="color: red;">section2</h3>
-        </section>
-        <section id="section3">
-            <h3 style="color: red;">section3</h3>
-        </section>
-        <section id="section4">
-            <h3 style="color: red;">section4</h3>
-        </section>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="menu-botton">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </nav>
 
-    </div>
-  
+    <!-- Home section -->
 
+
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                    <!-- <div class="outer">
+                        <img src="image_1.png" alt="profile" width="700" height="700">
+                    </div> -->
+                    <div class="maintxt">
+                        <h1>Hi , i'm <span style="color: rgb(0, 136, 255);">Manohar</span> Makkena</h1>
+                        <br>
+                        <hr color="white" style="height: 0.2px;">
+                        <br>
+                     <div class="image" style="float: left;">
+                         <img src="flutter.png" alt="flutter" height="40" width="50">
+                     </div>
+                     <div class="text">
+                         <h2>Flutter Devloper</h2>
+                 </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+
+    <section class="about" id="about">
+        <header><span style="color: rgb(0, 136, 255);" >ABOUT</span> ME</header>
+        <div class="inner">
+            <div class="about-details">
+                   <h3 style="color: #808080;">Name <span style="color: white;">: Manohar Makkena</span></h3><br>
+                   <h3 style="color: #808080;">Address  <span style="color: white;"">: Guntur , india</span></h3><br>
+                   <h3 style="color: #808080;">Age <span style="color: white;"">: 21</span></h3><br>
+                   <h3 style="color: #808080;">Mail <span style="color: white;"">: manoharmakkena717@gmail.com</span></h3><br>
+                   <h3 style="color: #808080;">Launguage <span style="color: white;"">: English,Telugu</span></h3><br>
+            </div>
+            <div class="about-boxes">
+                <div class="b1">
+                    <div class="box1" style="display: inline-block;">
+                        <h3>projects</h3>
+                        <p style="color:rgb(0, 136, 255) ;font-size: 40px; font-weight: 700;">4</p>
+                    </div>
+                    <div class="box2" style="display: inline-block;">
+                        <h3>Experience</h3>
+                        <p style="color:rgb(0, 136, 255) ;font-size: 40px; font-weight: 700;">2</p>
+                    </div>
+                </div>
+                <div class="b2">
+                    <div class="box3" style="display: inline-block;">
+                        <h3>Events Attended</h3>
+                        <p style="color:rgb(0, 136, 255) ;font-size: 40px; font-weight: 700;">1</p>
+                    </div>
+                    <div class="box4" style="display: inline-block;">
+                        <h3>Certificates</h3>
+                        <p style="color:rgb(0, 136, 255) ;font-size: 40px; font-weight: 700;">5</p>
+                    </div>
+                </div>
+               
+            </div>
+
+
+            <!-- About outer  -->
+            
+            <div class="outer">
+                <header style="color:rgb(0, 136, 255) ;">PROJECTS</header>
+            </div>
+        </div>
+    </section>
+    
+
+
+<script src="script.js"></script>
 </body>
 </html>
