@@ -81,7 +81,7 @@
           content: "\f00d";
      }
      .max-width{
-          padding: 0 50px;
+          padding: 0 30px;
      }
      .navbar .menu{
           position: fixed;
@@ -111,20 +111,19 @@
 
 .about{
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     margin: auto 80px auto 80px;
 }
 .about .inner{
      margin-top: 50px;
 }
 .about .inner .about-details{
      color: white;
-     margin-left: 150px;
-     margin-right: 150px;
      display: inline-block;
 }
 .about .inner .about-boxes{
      color: white;
-     /* margin-left: 150px;
-     margin-right: 150px; */
+     /* margin-left: 150px;*/
+     margin-right: 150px; 
      display: inline-block;
 }
 
@@ -183,4 +182,104 @@ header{
      margin: 0;
      text-align: center;
 }
+.about .timeline{
+     position: relative;
+     margin :100px auto;
+     max-width: 1200px;
+}
 
+.about .container{
+     padding: 10px 50px;
+     position: relative;
+     width: 50%;
+}
+.about .container .box{
+     padding: 20px 30px;
+     background: #fff;
+     position: relative;
+     border-radius: 6px;
+     font-size: 15px;
+}
+.left-con{
+     left: 0;
+}
+.right-con{
+     left:50%;
+}
+.container img{
+     position: absolute;
+     width: 40px;
+     border-radius: 50%;
+     right: -20px;
+     top: 32px;
+     z-index: 10px;
+}
+.right-con img{
+     left: -20px;
+} 
+
+.timeline::after{
+     content: '';
+     position: absolute;
+     width: 6px;
+     height: 100%;
+     background: rgb(0, 136, 255);
+     top: 0;
+     left: 50%;
+     margin-left: -3px;
+     z-index: -1;
+}
+
+@media (max-width:600px){
+     .timeline{
+      margin: 50px auto;
+     }
+     .timeline::after{
+          left: 30px;
+     }
+     .about .container{
+          width: 100%;
+          padding-left: 80px;
+          padding-right: 25px;
+
+     }
+     .right-con{
+          left: 0;
+     }
+     .left-con img , .right-con img{
+          left: 10px;
+     }
+}
+
+.protfolio{
+     color: white;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     margin: 50px 80px auto 80px; 
+}
+.protfolio .project-box{
+     display:grid;
+     grid-template-columns: repeat(auto-fit ,minmax(270px , 1fr));
+     gap: 25px;
+     margin-top: 50px;
+}
+.protfolio .project-box .box{
+     width: 200px;
+     height: 140px;
+     padding: 5px;
+     border: 3px solid rgb(0, 136, 255) ;
+     border-radius: 15px;
+     margin: auto;
+     text-align: center;
+}
+.protfolio .project-box .box .btn{
+     margin-top: 50px;
+     display: inline-block;
+     background: rgb(0, 136, 255);
+     color: white;
+     font-size: 17px;
+     border-radius: 5px;
+     padding: 5px 17px;
+}
+.protfolio .project-box .box:hover{
+     transform:scale(1.05);
+}
