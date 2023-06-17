@@ -187,6 +187,9 @@ header{
      margin :100px auto;
      max-width: 1200px;
 }
+.about .inner .about-details{
+     margin-right: 400px;
+}
 
 .about .container{
      padding: 10px 50px;
@@ -231,6 +234,15 @@ header{
 }
 
 @media (max-width:600px){
+     .about{
+          margin: auto 10px auto 10px;
+     }
+     .about .inner .about-details{
+          font-size: 15px;
+     }
+     header{
+          font-size: 30px;
+     }
      .timeline{
       margin: 50px auto;
      }
