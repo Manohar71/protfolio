@@ -10,7 +10,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body bgcolor="black">
-
     <!-- Navigation bar  -->
     <nav class="navbar" style="background-color: black;">
         <div class="max-width">
@@ -20,9 +19,9 @@
                 <lottie-player  src="https://assets2.lottiefiles.com/packages/lf20_0fvcgy9k.json"  background="transparent"  speed="1"  style="width: 80px; height: 80px; margin: 0px; padding: 0;"  loop  autoplay></lottie-player>
             </div>
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">portfolio </a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#outer_protfolio">portfolio </a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
             <div class="menu-botton">
@@ -125,10 +124,11 @@
 
 
     <!-- protfolio -->
-
+  
+    <div class="outer_protfolio" id="outer_protfolio">
 
     <section class="protfolio" id="protfolio">
-            <header>PROJECTS</header>
+            <header id="project_header">PROJECTS</header>
             <div class="project-box">
                 <div class="box">
                     <h3>FLAMER</h3>
@@ -163,6 +163,129 @@
                     <a href="#" class="btn">Read More</a>
                 </div>
             </div>
+
+           <div class="experience">
+            <header>EXPERIENCE</header>
+            <div class="timeline">
+                <div class="container left-con">
+                    <img src="zariya.jpg" alt="college">
+                    <div class="box">
+                        <h3>Zariyaa - (Full Stack Flutter Developer)</h3>
+                        <p>Feb - Mar 2023</p>
+                        <ul>
+                            <li><h5>Created a psychlogy related mobile responsive user experience with Flutter that allowed cross - platform accessibility to any device with
+                                primary use on mobile</h5></li>
+                            <li><h5> Addressed and fixed complex bugs</h5></li>
+                            <li><h5> Customized all the code for good Readability</h5></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container right-con">
+                    <img src="edu.png" alt="college">
+                    <div class="box">
+                        <h3>Healthyverse - Dira pvt Ltd</h3>
+                        <p>June - July 2022</p>
+                        <ul>
+                            <li><h5>Enhanced the health application’s features to effectively fix the bugs and optimized overall performance</h5></li>
+                            <li><h5> collaborated with the web development team for the requirements</h5></li>
+                            <li><h5>Created new features and updated screens by increasing performance</h5></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <!-- <div class="container left-con">
+                    <img src="edu.png" alt="college">
+                    <div class="box">
+                        <h3>SCC</h3>
+                        <p>2017-2018</p>
+                        <h5>Sri chaitanya</h5>
+                    </div>
+                </div> -->
+            </div>
+           </div>
+
+
+           <header>SKILLS</header>
+           <div class="skills">
+            <div class="box">
+                <h3>Flutter</h3>
+            </div>
+            <div class="box">
+                <h3>Firebase</h3>
+            </div>
+            <div class="box">
+                <h3>Dart</h3>
+
+            </div>
+            <div class="box">
+                <h3>Python</h3>
+            </div>
+            <div class="box">
+                <h3>Git</h3>
+             
+            </div>
+            <div class="box">
+                <h3>Rest API</h3>
+      
+            </div>
+            <div class="box">
+                <h3>HTML</h3>
+            </div>
+            <div class="box">
+                <h3>CSS</h3>
+            </div>
+            <div class="box">
+                <h3>Figma (UI/UX)</h3>
+            </div>
+           </div>
+    </section>
+    </div>
+
+    <!-- contact section -->
+    <!-- <section class="contact" id=""contact>
+        <h2 class="cheading"> Contacts<span>Me!</span></h2>
+        <form action="#">
+            <div class="inputbox">
+                <input type="text" placeholder="full name">
+                <input type="text" placeholder="Email Address">
+            </div>
+            <div class="inputbox">
+                <input type="number" placeholder="Mobile NUmber">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="na" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+            <input type="submit" value="SEnd meassage" class="btn">
+        </form>
+    </section> -->
+    <section class="contactform">
+        <header>Send a Message</header>
+    <div class="contactForm">
+        
+        <div class="formBox">
+            <div class="inputBox w50">
+                <input type="text" name="" required>
+                <span>First Name</span>
+            </div>
+            <div class="inputBox w50">
+                <input type="text" name="" required>
+                <span>Last Name</span>
+            </div>
+            <div class="inputBox w50">
+                <input type="text" name="" required>
+                <span>Email Address</span>
+            </div>
+            <div class="inputBox w50">
+                <input type="text" name="" required>
+                <span>Mobile Number</span>
+            </div>
+            <div class="inputBox w100">
+                <textarea name="" required></textarea>
+                <span>Write your message here...</span>
+            </div>
+            <div class="inputBox w100">
+                <input type="submit" value="Send">
+            </div>
+        </div>
     </section>
     
 
